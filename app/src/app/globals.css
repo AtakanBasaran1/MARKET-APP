@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+/* From Uiverse.io by GeorgeAdvertising */
+.section-banner {
+    height: 300px;
+    width: 10/12;
+    position: relative;
+    transition: left 0.3s linear;
+    background: url("https://www.sportinn.com.tr/air-jordan-1-low-erkek-basketbol-ayakkabisi-553558-141-168016-63-O.jpg");
+    background-size: contain;
+    background-position: left;
+    bottom: 0px;
+    border-radius: 40px;
+    animation: earthRotate 30s linear 0s infinite;
+    box-shadow: 50px 50px 200px RGBA(255, 255, 255, 0.2), -5px 0px 8px #0f06b899 inset,
+        15px 2px 25px #0f06b899 inset, 50px -2px 34px #0f06b899 inset,
+        50px 60px 60px #0f06b899 inset, 150px 50px 60px #0f06b899 inset;
+}
+
+#paginate {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes earthRotate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 400px 0;
+    }
+}
