@@ -8,17 +8,15 @@ const Category = ({ setCategory }) => {
 
     const { categories } = useSelector(state => state.categories)
 
-    console.log(categories)
-
     useEffect(() => {
         dispatch(getCategories())
     }, [dispatch])
 
     return (
-        <div className='w-full bg-blue-700 flex flex-row rounded-[300px]  text-white h-[60px]  '>
+        <div id='left' className='w-full  flex flex-row rounded-[300px]  text-black h-[60px] bg-white '>
 
 
-            <div className='flex flex-row font-bold  ml-[300px] mt-0 text-center items-center'>
+            <div className='flex flex-row font-bold  ml-[360px] mt-0 text-center items-center'>
                 <p onClick={() => window.location.href = "/"} className='text-lg  cursor-pointer hover:text-blue-300  rounded-[20px] p-2 capitalize '>Tüm Ürünler</p>
                 {
                     categories.map((category, index) => (
